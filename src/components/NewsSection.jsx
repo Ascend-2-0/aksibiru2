@@ -3,11 +3,7 @@ import news1 from '../assets/berita1.svg';
 import news2 from '../assets/berita2.svg';
 import news3 from '../assets/berita3.svg';
 
-interface NewsCardProps {
-  image: string;
-}
-
-const NewsCard: React.FC<NewsCardProps> = ({ image }) => {
+const NewsCard = ({ image }) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="h-100 overflow-hidden">
@@ -20,7 +16,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ image }) => {
   );
 };
 
-export const NewsSection: React.FC = () => {
+export const NewsSection = () => {
   const newsItems = [
     {
       image: news1,

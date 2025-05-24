@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X} from 'lucide-react';
 import logo from '../assets/logo.svg';
 
-export const Navbar: React.FC = () => {
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 

@@ -6,12 +6,7 @@ import pict4 from '../assets/kompos.svg';
 import pict5 from '../assets/volunteer.svg';
 import pict6 from '../assets/edukasi.svg';
 
-interface GuideCardProps {
-  image: string;
-  title: string;
-}
-
-const GuideCard: React.FC<GuideCardProps> = ({ image, title }) => {
+const GuideCard = ({ image, title }) => {
   return (
     <div className="flex flex-col items-center transition-all duration-300 group">
       <div className="w-32 h-32 rounded-full bg-white shadow-md flex items-center justify-center mb-4 group-hover:bg-teal-50 group-hover:shadow-lg transition-all duration-300">
@@ -26,7 +21,7 @@ const GuideCard: React.FC<GuideCardProps> = ({ image, title }) => {
   );
 };
 
-export const WasteGuide: React.FC = () => {
+export const WasteGuide = () => {
   const guideItems = [
     {
       image: pict1,

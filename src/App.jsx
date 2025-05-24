@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { NewsSection } from './components/NewsSection';
-import { WhySection } from './components/WhySection.tsx';
+import { WhySection } from './components/WhySection';
 import { SolutionSection } from './components/SolutionSection';
 import { AboutSection } from './components/AboutSection';
 import { WasteGuide } from './components/WasteGuide';

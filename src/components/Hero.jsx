@@ -1,7 +1,7 @@
 import React from 'react';
 import hero from '../assets/hero.svg';
 
-export const Hero: React.FC = () => {
+export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Image with Overlay */}

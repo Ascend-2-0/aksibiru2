@@ -2,7 +2,7 @@ import React from 'react';
 import { Star } from 'lucide-react';
 import logoijo from '../assets/logoijo.svg';
 
-export const AboutSection: React.FC = () => {
+export const AboutSection = () => {
   return (
     <section className="py-16 bg-[#EBFCFF]">
       <div className="container mx-auto px-4 max-w-4xl">

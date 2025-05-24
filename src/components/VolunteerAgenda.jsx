@@ -3,14 +3,7 @@ import { Calendar } from 'lucide-react';
 import gambar1 from '../assets/pantaiteluk.svg';
 import gambar2 from '../assets/pantaikedongan.svg';
 
-interface EventCardProps {
-  image: string;
-  location: string;
-  title: string;
-  date: string;
-}
-
-const EventCard: React.FC<EventCardProps> = ({ image, location, title, date }) => {
+const EventCard = ({ image, location, title, date }) => {
   return (
     <div className="group">
       <div className="h-60 w-90 overflow-hidden rounded-lg">
@@ -35,7 +28,7 @@ const EventCard: React.FC<EventCardProps> = ({ image, location, title, date }) =
   );
 };
 
-export const VolunteerAgenda: React.FC = () => {
+export const VolunteerAgenda = () => {
   const events = [
     {
       image: gambar1,

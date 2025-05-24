@@ -2,7 +2,7 @@ import React from 'react';
 import { Instagram, Facebook, Twitter } from 'lucide-react';
 import logo from '../assets/logo.svg';
 
-export const Footer: React.FC = () => {
+export const Footer = () => {
   return (
     <footer className="bg-[#2A5159] text-white pt-12 pb-6">
       <div className="container mx-auto px-4">

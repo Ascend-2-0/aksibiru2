@@ -2,7 +2,7 @@ import React from 'react';
 import { HelpCircle } from 'lucide-react';
 import gambar from '../assets/sampah.svg';
 
-export const SolutionSection: React.FC = () => {
+export const SolutionSection = () => {
   return (
     <section className="py-16  bg-[#EBFCFF]">
       <div className="container mx-auto px-4">

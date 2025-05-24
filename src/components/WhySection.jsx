@@ -2,7 +2,7 @@ import React from 'react';
 import { HelpCircle } from 'lucide-react';
 import gambar from '../assets/kurakura.svg';
 
-export const WhySection: React.FC = () => {
+export const WhySection = () => {
   return (
     <section className="py-16 bg-[#EBFCFF]">
       <div className="container mx-auto px-4">

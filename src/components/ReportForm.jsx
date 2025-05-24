@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import bgpict from '../assets/pantai.svg';
 
-export const ReportForm: React.FC = () => {
+export const ReportForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
@@ -15,8 +15,8 @@ export const ReportForm: React.FC = () => {
 
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value, files, type } = e.target as HTMLInputElement;
+  const handleChange = (e) => {
+    const { name, value, files, type } = e.target;
 
     if (type === "file" && files) {
       setFormData(prev => ({
@@ -31,7 +31,7 @@ export const ReportForm: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
 
